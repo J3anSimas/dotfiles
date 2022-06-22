@@ -3,8 +3,11 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+tmux source-file ~/.tmux.conf
 tmux
-/home/jeans/go/bin/keep-dir-clean
+# /home/jeans/go/bin/keep-dir-clean
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -19,7 +22,7 @@ ZSH_THEME="af-magic"
 
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-. $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/asdf.sh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -109,11 +112,16 @@ alias cls="clear"
 alias ls="exa -l"
 alias cat="bat"
 alias v="nvim"
-alias proj="cd ~/projects"
+alias proj="cd "
+alias gop="cd $GOPATH"
 alias zshconfig="lvim ~/.zshrc"
 alias nvimconfig="lvim ~/.config/nvim"
 alias kittyconfig="lvim ~/.config/kitty/kitty.conf"
+alias tmuxconfig="lvim ~/.tmux.conf"
 alias edit="lvim ."
+alias bkpzsh="cp ~/.zshrc ~/Documents/dotfiles/zsh"
+alias bkplvim="cp ~/.config/lvim/config.lua ~/Documents/dotfiles/lvim"
+alias bkptmux="cp ~/.tmux.conf ~/Documents/dotfiles/tmux"
 export PATH=~/.cargo/bin:/usr/local/go/bin:~/go/bin:/home/jeans/.local/bin:$PATH
 export GOPATH=~/go
-
+export PROJ=~/projects
