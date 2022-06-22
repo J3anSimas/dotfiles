@@ -14,6 +14,7 @@ lvim.format_on_save = true
 lvim.colorscheme = "tokyonight"
 lvim.transparent_window = true
 vim.opt.hlsearch = false
+vim.cmd("set rnu")
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
