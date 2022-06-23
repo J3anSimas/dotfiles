@@ -13,8 +13,15 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "tokyonight"
 lvim.transparent_window = true
+vim.g.tokyonight_transparent = true
+vim.g.tokyonight_transparent_sidebar = true
+vim.g.tokyonight_style = "night"
 vim.opt.hlsearch = false
+
+vim.cmd("set exrc")
 vim.cmd("set rnu")
+
+vim.cmd("set hidden")
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 

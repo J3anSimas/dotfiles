@@ -4,8 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+tmux 
 tmux source-file ~/.tmux.conf
-tmux
 # /home/jeans/go/bin/keep-dir-clean
 
 # Set name of the theme to load --- if set to "random", it will
@@ -113,15 +113,20 @@ alias ls="exa -l"
 alias cat="bat"
 alias v="nvim"
 alias proj="cd "
-alias gop="cd $GOPATH"
+alias gop="cd ~/go/src"
+alias dotfiles="cd ~/Documents/dotfiles"
 alias zshconfig="lvim ~/.zshrc"
 alias nvimconfig="lvim ~/.config/nvim"
 alias kittyconfig="lvim ~/.config/kitty/kitty.conf"
 alias tmuxconfig="lvim ~/.tmux.conf"
+alias i3config="lvim ~/.config/i3/config"
+alias alacrittyconfig="lvim ~/.config/alacritty/alacritty.yml"
 alias edit="lvim ."
 alias bkpzsh="cp ~/.zshrc ~/Documents/dotfiles/zsh"
 alias bkplvim="cp ~/.config/lvim/config.lua ~/Documents/dotfiles/lvim"
 alias bkptmux="cp ~/.tmux.conf ~/Documents/dotfiles/tmux"
-export PATH=~/.cargo/bin:/usr/local/go/bin:~/go/bin:/home/jeans/.local/bin:$PATH
+alias bkpi3="cp ~/.config/i3 ~/Documents/dotfiles/i3 -r"
+alias bkpalacritty="cp ~/.config/alacritty ~/Documents/dotfiles -r"
+export PATH=~/.cargo/bin:/usr/local/go/bin:~/go/bin:/home/jeans/.local/bin:/usr/local/bin:/usr/local/bin/picom:$PATH
 export GOPATH=~/go
 export PROJ=~/projects
